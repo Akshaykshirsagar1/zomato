@@ -1,0 +1,31 @@
+<div *ngIf="getcartdetails">
+    <table class="content-table"> 
+       <thead>
+        <tr>
+            <th>image</th>
+            <th>price</th>
+            <th>qunatity</th>
+            <th>total</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of getcartdetails">
+            <td><img src="{{element.imgurl}}" alt=""></td>
+            <td> RS: {{element.price}}</td>
+            <td> 
+                 
+            <button type="submit" class="btn" (click)="inc(element.id,element.qnty)"><i >+</i></button>
+            {{element.qnty}}
+                <button type="submit" class="btn" (click)="dec(element.id,element.qnty)" ><i >-</i></button>
+            </td>
+            <td>{{element.qnty*element.price}}</td>
+            <td><button type="button" (click)="dlt(element.id)">DELETE</button></td>
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <button type="button" (click)="remove(element)">remove all</button>
+    </div>
+    </div>
+    <div>TOTAL= {{total}}</div>

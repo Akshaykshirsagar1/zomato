@@ -1,0 +1,46 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+ul li a{
+    border: 1px solid whitesmoke; 
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: blueviolet;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.content{
+    padding: 1rem;
+}
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+div input{
+    border-radius: 10rem;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    background-color:wheat;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+.addcart{
+    border-radius: 4px;
+    background-color: aqua;
+}
